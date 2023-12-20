@@ -1,0 +1,17 @@
+@import 'src/scss/variables.scss';
+
+.app-hearder {
+  padding: 0;
+  border-bottom: none !important;
+  background-color: transparent;
+ 
+  min-height: 100px;
+}
+.app-container {
+  height:100%;
+  width:100%;
+  max-width: 600px;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

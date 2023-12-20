@@ -1,0 +1,31 @@
+@import 'src/scss/variables.scss';
+
+.app-right-sidebar {
+    width: 400px;
+    background: $white;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    transition: 0.5s width ease-in-out;
+    box-shadow: -4px 0 5px -5px #DFDCDC;
+    &.hide {
+      width: 0px;
+      .app-sidebar-inner-content {
+        display: none;
+      }
+    }
+    .app-sidebar-inner-content {
+        padding: 8px;
+        height: 100%;
+        .sidebar-title {
+            border-bottom: 1px solid $light-100;
+            padding: 10px 0;
+            h5 {
+              color: $dark;
+            }
+        }
+        .sidebar-body {
+            height: calc(100vh - 60px);
+        }
+    }
+  }
